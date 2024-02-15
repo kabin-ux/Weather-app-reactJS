@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  background-color: #2b2a2a;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget {
+  height: 400px;
+  width: 550px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.widget .weather-icon {
+  flex: 1 100%;
+  height: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: #fafafa;
+  font-family: weathericons;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 100px;
+}
+
+.widget .weather-info {
+  flex: 0 0 70%;
+  height: 40%;
+  background: #57bd84;
+  display: flex;
+  align-items: center;
+  color: rgb(1, 1, 1);
+  justify-content: space-around;
+  padding: 0px 8px;
+}
+
+.widget .weather-info .temperature {
+  flex: 0 0 40%;
+  width: 100%;
+  font-size: 65px;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 20px;
+}
+
+.widget .weather-info .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ .widget .weather-info .description .weather-condition {
+  text-transform: uppercase;
+  font-size: 45px;
+}
+
+.widget .weather-info .description .place {
+  font-size: 21px;
+}
+
+.widget .date {
+  flex: 0 0 30%;
+  height: 20%;
+  background: #57bd84;
+  font-size: 30px;
+  text-align: center;
+}
+
+.widget .extra-temp {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  background: #fafafa;
+  align-items: center; 
+  font-size: 100px;
+  height: 80px;
+}
+
+.widget .extra-temp p {
+  font-size: 18px;
+}
+
+.temp-info-minmax,
+.weather-extra-info,
+.two-sided-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 10px;
+  color: #70c1b3;
+  background-color: white;
+}
+
+.widget .extra-temp .extra-info-leftside {
+  margin-left: 20px ;
+  color: #080705;
+  font-size: 16px;
+}
+
+/* search button css  */
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.searchTerm {
+  width: 50%;
+  border: none;
+  padding: 16px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 18px;
+}
+
+.searchTerm:focus {
+  color: #57bd84;
+}
+
+.search-btn {
+  width: 80px;
+  height: 32px;
+  border: none;
+  background: #57bd84;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-btn:hover {
+  background-color: #17cea3;
+  box-shadow: #17cea3;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+/* .wrap {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
