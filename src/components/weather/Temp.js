@@ -8,7 +8,7 @@ const Temp = () => {
 
     const getWeatherInfo = async () => {
         try{
-            let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=9e71080fa6ad4fbd5d99820d806f3f41`;
+            let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=${process.env.REACT_APP_SECRET_KEY}`;
             
             let response = await fetch(url);
             let data = await response.json();

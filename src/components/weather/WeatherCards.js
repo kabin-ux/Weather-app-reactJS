@@ -67,7 +67,7 @@ const WeatherCards = ({tempInfo}) => {
                                 <i className={'wi wi-sunset'}></i>
                             </p>
                             <p  className='extra-info-leftside'>{sunsettime} <br/>
-                            Sunset
+                                Sunset
                             </p>
                             
                         </div>
